@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 
 app.listen(3000, function () {
   console.log("Server siap untuk menerima permintaan.");
-}); //Menggunakan express, sudah otomatis mengatur host url nya menjadi 'localhost' & membuat instance dari http.createServer(). Jadi kita tidak perlu melakukannya lagi
+}); //Menggunakan express, sudah otomatis mengatur host url nya menjadi 'localhost',  membuat instance dari http.createServer(), & Mengatur Status Code dari request yang kita buat. Jadi kita tidak perlu melakukannya lagi
 
 app.get("/", function (req, res) {
   res.sendFile("./views/index.html", { root: __dirname });
